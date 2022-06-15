@@ -1,6 +1,6 @@
 # Comandos GIT 
 
-## A seguir alguns dos principais comandos git e sua função, levando em consideração o conhecimento de termos como staged, merge e branch
+### A seguir alguns dos principais comandos git e sua função, levando em consideração o conhecimento de termos como staged, merge e branch
 
 - git init: usado quando uma pasta está na máquina e quer se iniciar um versionamento naquele diretório.
 
@@ -10,4 +10,4 @@
 
 - git commit -m : insere os arquivos que estão no estado modified na branch com um comentário
 
-- git pull linkdorepo: faz um download do repo na sua máquina, atualizando a versão local com as novas branchs e novos commits feitos. 
+- git pull <linkdorepo>: faz um download do repo na sua máquina, atualizando a versão local com as novas branchs e novos commits feitos. 
