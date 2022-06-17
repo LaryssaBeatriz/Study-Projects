@@ -4,6 +4,6 @@ Este repositório será utilizado para anotações, registro de projetos e quais
 
 Por se tratar do resultado de estudos, está sujeito a mudanças e a erros. 
 
-##Sumário 
+## Sumário 
 
 - Comandos GIT 
