@@ -7,3 +7,8 @@ Por se tratar do resultado de estudos, está sujeito a mudanças e a erros.
 ## Sumário 
 
 - Comandos GIT 
+
+
+### Assuntos a estudar 
+
+- Versionamento de código, branchs e merge

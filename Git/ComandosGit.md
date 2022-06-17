@@ -10,4 +10,6 @@
 
 - git commit -m : insere os arquivos que estão no estado modified na branch com um comentário
 
-- git pull <linkdorepo>: faz um download do repo na sua máquina, atualizando a versão local com as novas branchs e novos commits feitos. 
+- git pull <linkdorepo>: faz um download do repo na sua máquina, atualizando a versão local com as novas branchs e novos commits feitos. Ou você pode apenas acessar o seu repositório local e a partir dele fazer o pull sem o link do repositório remoto.
+
+- 
