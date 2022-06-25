@@ -12,4 +12,5 @@
 
 - git pull <linkdorepo>: faz um download do repo na sua máquina, atualizando a versão local com as novas branchs e novos commits feitos. Ou você pode apenas acessar o seu repositório local e a partir dele fazer o pull sem o link do repositório remoto.
 
-- 
+- git checkout -b <nomeBranch>: cria uma nova branch ou em caso de já existência da branch ela reinicia seu status
+

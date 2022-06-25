@@ -7,6 +7,7 @@ Por se tratar do resultado de estudos, está sujeito a mudanças e a erros.
 ## Sumário 
 
 - Comandos GIT 
+- Kotlin
 
 
 ### Assuntos a estudar 
