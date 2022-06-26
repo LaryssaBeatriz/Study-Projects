@@ -2,6 +2,22 @@
 
 # Comandos GIT 
 
+### Criação de chave SSH para o Github:
+
+- Com Git instalado na máquina, execute o seguinte comando dentro do seu terminal:
+
+  `ssh-keygen -t ed25519 -C <seu@email>`
+
+- Agora é preciso vincular sua chave pública (arquivo com extensão `.pub`) do SSH ao Github, para isso basta executar:
+
+  `cat ~/.ssh/id_ed25519.pub`
+
+- Depois de colar a saída do comando anteior no Github, em `Settings` > `SSH and GPG keys` > `New SSH key`.
+
+- Feito isso, teste o vinculo com o Github usando o comando a seguir no seu terminal:
+
+  `ssh -T git@github.com`
+
 ### A seguir alguns dos principais comandos git e sua função, levando em consideração o conhecimento de termos como staged, merge e branch
 
 - `git init`: usado quando uma pasta está na máquina e quer se iniciar um versionamento naquele diretório.

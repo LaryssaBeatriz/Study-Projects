@@ -10,12 +10,14 @@ const val - é uma constante que só pode ser acessada, não reconhecida quando 
 
 -> declaração de variável com tipagem explícita e seguida de interrogação indica que a variável pode receber valor nulo
 
-Exemplo
+Exemplo:
 
+```
 var phrase:String? = null
 // a variável pode ser nula ou um String
 var idade:Int? = null
 // a variável pode ser nula ou um Int
+```
 
 ## Operadores Aritméticos
 
