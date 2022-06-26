@@ -80,4 +80,13 @@ exemplo 2:
 	}
 ```
 
+## Funções Empty e Blank 
+
+-> isBlank() e isEmpty()
+
+**Empty** se refere a toda a String cujo **tamanho é igual a zero**. **Blank** se refere a uma String cujo o **conteúdo são apenas espaços em branco**.
+
+- Strings vazias estão em branco, logo se isEmpty é verdadeiro, isBlank é verdadeiro também 
+- Esses métodos são utilizados principalmente em inputs do usuário 
+
 [▲ top](#kotlin)
