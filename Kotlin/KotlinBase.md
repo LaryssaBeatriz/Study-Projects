@@ -69,7 +69,7 @@ exemplo 2:
 
 ## Funções Empty e Blank 
 
-´isBlank()´ e ´isEmpty()´
+`isBlank()` e `isEmpty()`
 
 **Empty** se refere a toda a String cujo **tamanho é igual a zero**. **Blank** se refere a uma String cujo o **conteúdo são apenas espaços em branco**.
 
@@ -78,7 +78,7 @@ exemplo 2:
 
 ## Funções 
 
-Uma função é definida por  ´Fun nomeDaFunção(nome:Tipo):TipoRetorno{}´, quando a função for void basta apenas ocultar o TipoRetorno
+Uma função é definida por  `Fun nomeDaFunção(nome:Tipo):TipoRetorno{}`, quando a função for void basta apenas ocultar o TipoRetorno
 
 ### Funções de ordem superior 
 
