@@ -21,23 +21,12 @@ var idade:Int? = null
 
 ## Operadores Aritméticos
 
-tabela
-
-Função Expressão Comando Atribuição
-
-Soma a+b a.plus(b) a += b
-Subtração a-b a.minus(b) a -= b
-Multip a _b a.times(b) a _= b
-divisão a/b a.div(b) a/=b
-resto a%b a.mod(b) a%=b
+![Tabela dos Operadores Aritméticos] (/Study-Projects/Kotlin/Images/TabelaOpAritmeticos.png)
 
 ## Operadores comparativos
 
-Função Expressão Comando
-Maior/Menor a>b ou a<b a.compareTo(b)>0 ou a.compareTo(b) < 0
-Mai/men igual a>=b ou a<=b a.compareTo(b)>=0 ou a.compareTo(b)<=0
-Igual a == b a.equals(b)
-Diferente a!= b !(a.equals(b))
+![Tabela dos Operadores Aritméticos] (/Study-Projects/Kotlin/Images/TabelaOpComparativos.png)
+
 
 Obs: os comandos compareTo retornam valores **-1 para menor que**, **0 para igual** e **1 para maior que**, o trecho de código que compara o compareTo a um valor (0 na tabela) faz o comando retornar um boleano.
 
@@ -47,10 +36,8 @@ Obs2.: Operadores e equals retornam booleano
 
 -> retornam booleano
 
-Função e expressão Comando
+![Tabela dos Operadores Aritméticos] (/Study-Projects/Kotlin/Images/TabelaOpLogicos.png)
 
-E (&&) (expressao 1) and (expressao 2)
-OU (||) (expressao 1) or (expressao 2)
 
 ## Operadores **In** e **Range**
 
@@ -82,11 +69,39 @@ exemplo 2:
 
 ## Funções Empty e Blank 
 
--> isBlank() e isEmpty()
+´isBlank()´ e ´isEmpty()´
 
 **Empty** se refere a toda a String cujo **tamanho é igual a zero**. **Blank** se refere a uma String cujo o **conteúdo são apenas espaços em branco**.
 
 - Strings vazias estão em branco, logo se isEmpty é verdadeiro, isBlank é verdadeiro também 
 - Esses métodos são utilizados principalmente em inputs do usuário 
+
+## Funções 
+
+Uma função é definida por  ´Fun nomeDaFunção(nome:Tipo):TipoRetorno{}´, quando a função for void basta apenas ocultar o TipoRetorno
+
+### Funções de ordem superior 
+
+São funções que não precisam de objeto ou classe para serem chaamdas. Recebem outra função ou lambda por parametro (lambda seria aquelas funções que possuem uma seta e que representam um bloco de função). São úteis para a generaliação de funções e tratamentos de erros, que permite que a função possa ser reutilizada mais facilmente, seja testada e também mais segura. 
+
+```
+fun main() {
+	
+    val z:Int 
+    // 34 é equivalente ao n1, 90 é equivalente ao n2 e o sum indica a operação que a função vai fazer 
+	z = calculate(34,90,::sum)
+ 
+    println(z)
+  
+}
+
+fun sum(a1:Int, a2:Int) = a1.plus(a2)
+
+// Nesse caso, os valores que são passados por parâmetro ao chamar a função, vão ser os mesmo executados pela operação
+fun calculate(n1:Int, n2:Int, operation:(Int,Int) -> Int): Int{
+    val result = operation(n1,n2)
+    return result 
+}
+```
 
 [▲ top](#kotlin)
