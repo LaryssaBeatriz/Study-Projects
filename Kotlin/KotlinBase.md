@@ -1,6 +1,8 @@
+# KOTLIN
+
 [◄ back](../README.md)
 
-# KOTLIN
+## Introdução
 
 ## Sumário 
 
@@ -46,12 +48,11 @@ var idade:Int? = null
 
 ## Operadores Aritméticos
 
-![Tabela dos Operadores Aritméticos] (/Study-Projects/Kotlin/Images/TabelaOpAritmeticos.png)
+![Tabela dos Operadores Aritméticos](./Images/TabelaOpAritmeticos.png)
 
 ## Operadores Comparativos
 
-![Tabela dos Operadores Aritméticos] (/Study-Projects/Kotlin/Images/TabelaOpComparativos.png)
-
+![Tabela dos Operadores Aritméticos](./Images/TabelaOpComparativos.png)
 
 Obs: os comandos compareTo retornam valores **-1 para menor que**, **0 para igual** e **1 para maior que**, o trecho de código que compara o compareTo a um valor (0 na tabela) faz o comando retornar um boleano.
 
@@ -61,8 +62,7 @@ Obs2.: Operadores e equals retornam booleano
 
 -> retornam booleano
 
-![Tabela dos Operadores Aritméticos] (/Study-Projects/Kotlin/Images/TabelaOpLogicos.png)
-
+![Tabela dos Operadores Aritméticos](./Images/TabelaOpLogicos.png)
 
 ## Operadores **In** e **Range**
 
@@ -72,14 +72,14 @@ Função e expressão
 - não contém (!in)
 - range/ faixa de valores
 
-exemplo:
+Exemplo 1:
 
 ```
 val numbers = listOf (3,9,0,1,2)
 print(12 in numbers)
 ```
 
-exemplo 2:
+Exemplo 2:
 
 ```
 	const val MIN_AGE = 16
@@ -111,13 +111,13 @@ São funções que não precisam de objeto ou classe para serem chaamdas. Recebe
 
 ```
 fun main() {
-	
-    val z:Int 
-    // 34 é equivalente ao n1, 90 é equivalente ao n2 e o sum indica a operação que a função vai fazer 
+
+    val z:Int
+    // 34 é equivalente ao n1, 90 é equivalente ao n2 e o sum indica a operação que a função vai fazer
 	z = calculate(34,90,::sum)
- 
+
     println(z)
-  
+
 }
 
 fun sum(a1:Int, a2:Int) = a1.plus(a2)
@@ -125,7 +125,7 @@ fun sum(a1:Int, a2:Int) = a1.plus(a2)
 // Nesse caso, os valores que são passados por parâmetro ao chamar a função, vão ser os mesmo executados pela operação
 fun calculate(n1:Int, n2:Int, operation:(Int,Int) -> Int): Int{
     val result = operation(n1,n2)
-    return result 
+    return result
 }
 ```
 
