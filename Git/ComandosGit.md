@@ -1,33 +1,93 @@
-# Comandos GIT
+# Git
 
 [◄ back](../README.md)
 
-### Criação de chave SSH para o Github:
+## Introdução
 
-- Com Git instalado na máquina, execute o seguinte comando dentro do seu terminal:
+...
 
-  `ssh-keygen -t ed25519 -C <seu@email>`
+## Comandos Git
 
-- Agora é preciso vincular sua chave pública (arquivo com extensão `.pub`) do SSH ao Github, para isso basta executar:
+### Comandos Inicais
 
-  `cat ~/.ssh/id_ed25519.pub`
+- Inicializando um repositório/pasta com git.
 
-- Depois de colar a saída do comando anteior no Github, em `Settings` > `SSH and GPG keys` > `New SSH key`.
+    ```bash
+    git init
+    ```
 
-- Feito isso, teste o vinculo com o Github usando o comando a seguir no seu terminal:
+- Clonar repositório/pasta.
+    
+    ```bash
+    git clone <URL>
+    ```
 
-  `ssh -T git@github.com`
+- Retira o arquivo do estado unmodified e o põe na "visão" do git, os transformando em modified.
 
-### A seguir alguns dos principais comandos git e sua função, levando em consideração o conhecimento de termos como staged, merge e branch
+    ```bash
+    git add <arquivo/pasta>
+    ```
 
-- `git init`: usado quando uma pasta está na máquina e quer se iniciar um versionamento naquele diretório.
+- Mostra o estado dos arquivos e pastas do repositório, demonstrando quais arquivos e pastas foram modificados, quais estão sendo visiveis pelo git, entre outras informações.
 
-- `git add`: retira o arquivo do estado unmodified e o põe na "visão" do git, os transformando em modified.
+    ```bash
+    git status
+    ```
 
-- `git status`: mostra o estado dos arquivos e pastas do repositório, demonstrando quais arquivos e pastas foram modificados, quais estão sendo visiveis pelo git, entre outras informações.
+- Insere os arquivos que estão no estado modified na branch com um comentário.
 
-- `git commit -m`: insere os arquivos que estão no estado modified na branch com um comentário
+    ```bash
+    git commit -m "mensagem"
+    ```
 
-- `git pull <linkdorepo>`: faz um download do repo na sua máquina, atualizando a versão local com as novas branchs e novos commits feitos. Ou você pode apenas acessar o seu repositório local e a partir dele fazer o pull sem o link do repositório remoto.
+- Faz download (puxa) das modificações do repositório remoto definido na `origin` para o repositório local.
 
-- `git checkout -b <nomeBranch>`: cria uma nova branch ou em caso de já existência da branch ela reinicia seu status
+    ```bash
+    git pull origin <branch>
+    ```
+
+- Faz upload (envia) das modificações do repositório local para o repositório remoto definido na `origin`.
+
+    ```bash
+    git push origin <branch>
+    ```
+
+- Verificar `origin` (fetch & push) do repositório/pasta:
+    
+    ```bash
+    git remote -v
+    ```
+
+---
+
+### Comandos de Configuração
+
+- Dinifindo globalmente o nome e e-mail do autor.
+
+    ```bash
+    git config --global user.name <name>
+    ```
+
+    ```bash
+    git config --global user.email <my@mail.com>
+    ```
+
+    **Obs:** Para definir localmente, limitando ao respositório/pasta em questão, retire a flag `--global`.
+
+- Configurar branch inicial p/ repositórios
+    
+    ```bash
+    git config --global init.defaultBranch <name>
+    ```
+    
+- Configurar branch inicial p/ repositórios
+    
+    ```bash
+    git config --global init.defaultBranch <name>
+    ```
+
+### Chave SSH
+
+...
+
+[▲ top](#git)
