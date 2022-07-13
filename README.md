@@ -13,16 +13,17 @@ Para sugestões, erros e etc, reporte ✨ [aqui](https://github.com/LaryssaBeatr
 <samp>Linguagens</samp>
 
 - [Kotlin](./Kotlin/KotlinBase.md)
-- [Ruby](./)
-- [JavaScript](./)
 
 <samp>Frameworks</samp>
 
 <samp>Ferramentas</samp>
 
 - [Git](./Git/ComandosGit.md)
-- [Docker](./)
 
 ### Assuntos a estudar:
+
+-[] Versionamento, branchs e merges 
+-[] Docker
+
 
 ...
