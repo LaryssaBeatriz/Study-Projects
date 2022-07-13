@@ -10,7 +10,7 @@
 
 ### Comandos Inicais
 
-- Inicializando um repositório/pasta com git.
+- Inicializando um repositório/pasta com Git.
 
     ```bash
     git init
@@ -22,13 +22,13 @@
     git clone <URL>
     ```
 
-- Retira o arquivo do estado unmodified e o põe na "visão" do git, os transformando em modified.
+- Retira o arquivo do estado unmodified e o põe na "visão" do Git, os transformando em modified.
 
     ```bash
     git add <arquivo/pasta>
     ```
 
-- Mostra o estado dos arquivos e pastas do repositório, demonstrando quais arquivos e pastas foram modificados, quais estão sendo visiveis pelo git, entre outras informações.
+- Mostra o estado dos arquivos e pastas do repositório, demonstrando quais arquivos e pastas foram modificados, quais estão sendo visiveis pelo Git, entre outras informações.
 
     ```bash
     git status
@@ -52,7 +52,7 @@
     git push origin <branch>
     ```
 
-- Verificar `origin` (fetch & push) do repositório/pasta:
+- Verificar `origin` (fetch & push) do repositório/pasta.
     
     ```bash
     git remote -v
@@ -74,16 +74,16 @@
 
     **Obs:** Para definir localmente, limitando ao respositório/pasta em questão, retire a flag `--global`.
 
-- Configurar branch inicial p/ repositórios
+- Configurar branch inicial p/ repositórios.
     
     ```bash
     git config --global init.defaultBranch <name>
     ```
     
-- Configurar branch inicial p/ repositórios
+- Definindo editor de texto padrão para o Git.
     
     ```bash
-    git config --global init.defaultBranch <name>
+    git config --global core.editor <nome-do-editor>
     ```
 
 ### Chave SSH

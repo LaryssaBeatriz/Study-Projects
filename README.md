@@ -6,15 +6,23 @@ Este repositório será utilizado para anotações, registro de projetos e quais
 
 Por se tratar do resultado de estudos, está sujeito a mudanças e a erros.
 
-Para sugestões, erros e etc, reporte [aqui](https://github.com/LaryssaBeatriz/Study-Projects/issues/new).
+Para sugestões, erros e etc, reporte ✨ [aqui](https://github.com/LaryssaBeatriz/Study-Projects/issues/new).
 
 ## Sumário
 
-- [Git](./Git/ComandosGit.md)
+<samp>Linguagens</samp>
+
 - [Kotlin](./Kotlin/KotlinBase.md)
-- [Ruby](./Ruby/Ruby.md)
+- [Ruby](./)
+- [JavaScript](./)
+
+<samp>Frameworks</samp>
+
+<samp>Ferramentas</samp>
+
+- [Git](./Git/ComandosGit.md)
+- [Docker](./)
 
 ### Assuntos a estudar:
 
-- JavaScript
-- Docker
+...
