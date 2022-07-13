@@ -1,17 +1,17 @@
-# KOTLIN
+# Kotlin
 
 [◄ back](../README.md)
 
 ## Introdução
 
-## Sumário 
+## Sumário
 
 - [Tipos de variáveis](#tipos-de-variavéis)
 - [Operadores Aritméticos](#operadores-aritméticos)
 - [Operadores Comparativos](#operadores-comparativos)
 - [Operadores Lógicos](#operadores-lógicos)
 - [Operadores In e Range](#operadores-in-e-range)
-- [Funções](#funções) 
+- [Funções](#funções)
 - [Funções Empty e Blank](#funções-empty-e-blank)
 - [Funções de ordem superior](#funções-de-ordem-superior)
 - [Funções single-line](#funções-single-line)
@@ -26,7 +26,7 @@
 - [Do..While](#dowhile)
 - [For](#for)
 
-## Tipos de variáveis 
+## Tipos de variáveis
 
 var - variável comum, dado que pode ser modificado ao longo do código e da execução
 
@@ -128,46 +128,47 @@ fun calculate(n1:Int, n2:Int, operation:(Int,Int) -> Int): Int{
 }
 ```
 
-### Funções single-line 
+### Funções single-line
 
 `Fun nomeDaFuncao(nome:Tipo) = retorno`
 
-Se trata de uma função de uma linha e infere o tipo de retorno 
+Se trata de uma função de uma linha e infere o tipo de retorno
 
 ```
-private fun getFullname (name: String, lastName: String) = "$name $lastname" 
+private fun getFullname (name: String, lastName: String) = "$name $lastname"
 ```
 
-### Funções/ extensões 
+### Funções/ extensões
 
 ` fun Tipo.nomeDaFuncao()`
 
 Uma função que só pode ser chamada por um tipo específico, como o caso do plus(). O valor pode ser referenciado dentro da função pela palavra **this**
 
-``` 
- fun String.randomCapitalizedLetter() = this[(0..this.lenght-1).random()].toUpperCase() 
+```
+ fun String.randomCapitalizedLetter() = this[(0..this.lenght-1).random()].toUpperCase()
 ```
 
-## Estruturas de controle 
+## Estruturas de controle
 
-- If/ else 
+- If/ else
 - When (o switch case do Kotlin)
 - Elvis Operator
 
-### If/else 
+### If/else
 
 ```
 if(expressao){
-	//bloco de codigo 
+	//bloco de codigo
 }else if (expressao2){
 	//bloco de codigo
 }else{
-	//bloco 
+	//bloco
 }
 ```
-Obs: O if/else é recomendado para quando se tem poucas expressões, mais do que duas ou três condicionais se recomenda o when. Dessa forma, auxilia no controle e melhora o código tornando-o mais legível. 
 
-### When 
+Obs: O if/else é recomendado para quando se tem poucas expressões, mais do que duas ou três condicionais se recomenda o when. Dessa forma, auxilia no controle e melhora o código tornando-o mais legível.
+
+### When
 
 ```
 when {
@@ -177,7 +178,8 @@ when {
 	else -> {}
 }
 ```
-O else é obrigatório no corpo do when como alternativa (só não é necessário em caso de booleanos já que ele só tem três estados). Aceita Range como case e também aceita operadores. 
+
+O else é obrigatório no corpo do when como alternativa (só não é necessário em caso de booleanos já que ele só tem três estados). Aceita Range como case e também aceita operadores.
 
 Exemplo 1 :
 
@@ -190,38 +192,41 @@ when {
 }
 ```
 
-### Elvis operator 
+### Elvis operator
 
 Verifica se uma variável é nula ou não e atribuindo algo em caso de ser.
 
 Exemplo 1:
 
-``` 
-val a:Int? = null 
-// Define a variável "a" como Int ou null e atribui null a ela 
+```
+val a:Int? = null
+// Define a variável "a" como Int ou null e atribui null a ela
 
 var number = a ?: 0
-// diz que numeber recebe a, o ? indica a verificação da nulidade, se a for nulo então number recebe 0, senão number recebe a. 
+// diz que numeber recebe a, o ? indica a verificação da nulidade, se a for nulo então number recebe 0, senão number recebe a.
 ```
-Pode ser encadeado, ou seja ter vários elvis operator seguidos 
 
-Exemplo 2: 
+Pode ser encadeado, ou seja ter vários elvis operator seguidos
+
+Exemplo 2:
+
 ```
 var number = a?: b?: 0
-// se a não for nulo, number recebe a, se for ele verifica b. Se b for nulo number recebe 0, se não recebe b. 
+// se a não for nulo, number recebe a, se for ele verifica b. Se b for nulo number recebe 0, se não recebe b.
 ```
 
-### Atribuição usando essas estruturas 
+### Atribuição usando essas estruturas
 
 O valor atribuido tem que estar na última linha do bloco. As chaves são opcionais se a condicional só fizer atribuição e se tudo couber numa linha deve ser posto em uma linha só.
 
-Exemplo 1: 
-``` 
-val MaxValue = if (a > b) a else if (a < b) b else b 
+Exemplo 1:
+
+```
+val MaxValue = if (a > b) a else if (a < b) b else b
 
 val minValue = if (a > b ){
 	println("b($b) é o menor valor")
-	b 
+	b
 }else if (a < b){
 	println("a($a) é o menor valor")
 	a
@@ -233,23 +238,24 @@ val minValue = if (a > b ){
 
 ## Estruturas de repetição
 
-- While 
-- Do..While 
-- For 
-- forEach 
+- While
+- Do..While
+- For
+- forEach
 
 Aceita comandos in, range, until, downTo e step
 
-### While 
+### While
 
 ```
 While (condicao){
-	//bloco de código	
+	//bloco de código
 }
 ```
+
 Enquanto a condição for verdadeira, a repetição vai rodar. Por isso é importante que dentro do bloco de código haja algo que retire essa condição do estado verdadeiro.
 
-###	Do..while 
+### Do..while
 
 ```
 do {
@@ -272,7 +278,7 @@ Sua estrutura é caracterizada por `for (varIndexadora in/until/downTo faixa de 
 
 Exemplo 1 :
 
-``` 
+```
 for (i in 0..20 step 2){
 	println(i)
 }
